@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+/* 基础样式（如重置样式、排版默认值） */
+@tailwind base;
+/* Tailwind 自定义的组件类（如按钮、表单等，如果定义了的话） */
+@tailwind components;
+/* 工具类（如 bg-blue-500、text-center、p-4 等） */
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Quicksand", sans-serif;
+  }
+}
+
+@layer components {
+  .menu-item {
+    @apply relative flex h-full items-center p-4 cursor-pointer font-bold text-pink-200 hover:text-zinc-200 hover:bg-white/10 transition-colors ease-in-out;
+  }
+}
